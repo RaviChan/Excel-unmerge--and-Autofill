@@ -3,8 +3,10 @@ Sub c()
 Attribute c.VB_Description = "Unmerge and Auto-fill"
 Attribute c.VB_ProcData.VB_Invoke_Func = "C\n14"
 '
-' checkcurrent Macro
-'
+' Unmerge and Auto-fill Macro
+' Unmerging all the merged cells and fill them with original values. VBA for Excel.
+' Author: Patrick Chen
+' Date: 2020-08-31
 ' Keyboard Shortcut: Ctrl+Shift+C
 '
     Dim Cindex As Integer
@@ -17,7 +19,7 @@ Attribute c.VB_ProcData.VB_Invoke_Func = "C\n14"
             Dim rCurr As Range
             Set rCurr = Selection
 
-            Selection.Offset(1, Ê0).Select
+            Selection.Offset(1, ÃŠ0).Select
             rCurr.UnMerge
             rCurr.FormulaR1C1 = cellTitle
         Loop
